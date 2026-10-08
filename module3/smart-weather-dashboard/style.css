@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 35px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Search */
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    width: 70%;
+    max-width: 500px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #ff6b35;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #e85d2a;
+}
+
+/* Error */
+#error {
+    text-align: center;
+    color: #b00020;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Weather Card */
+.weather-card {
+    background: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+}
+
+.weather-card h2 {
+    font-size: 28px;
+    color: #1976d2;
+}
+
+.weather-icon {
+    font-size: 70px;
+    margin: 15px;
+}
+
+.weather-card h3 {
+    font-size: 45px;
+    color: #ff6b35;
+    margin-bottom: 10px;
+}
+
+.weather-card > p {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 25px;
+}
+
+.weather-details div {
+    background: #e3f2fd;
+    padding: 15px 30px;
+    border-radius: 12px;
+}
+
+.weather-details p {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #1976d2;
+}
+
+/* Travel Suggestion */
+.travel-card {
+    background: #fff3cd;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.travel-card h2 {
+    color: #d97706;
+    margin-bottom: 12px;
+}
+
+.travel-card p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Forecast */
+.forecast-section {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.forecast-section h2 {
+    text-align: center;
+    color: #1976d2;
+    margin-bottom: 20px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.forecast-card {
+    background: #e3f2fd;
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.forecast-card h3 {
+    color: #1976d2;
+    margin-bottom: 10px;
+}
+
+.forecast-card .icon {
+    font-size: 40px;
+    margin: 10px;
+}
+
+.forecast-card p {
+    margin: 6px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #1565c0;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    .weather-details {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .forecast-card {
+        width: 100%;
+    }
+}
